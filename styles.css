@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #ffffff; /* Nền trắng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #007bff; /* Màu xanh biển */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+h1 {
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    color: #007bff; /* Make the text blue */
+}
+
+.btn-lien-he {
+    background-color: #ffc107;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-lien-he:hover {
+    background-color: #e0a800;
+}
+
+footer {
+    background: #343a40;
+}
+
+.property-card {
+    margin-bottom: 20px;
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+}
+
+.property-details {
+    padding: 15px;
+}
+
+.property-price {
+    font-size: 1.5em;
+    color: #28a745;
+}
+
+/* Nút nổi */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: width 0.3s, padding 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: left   ;
+}
+
+.floating-btn i {
+    transition: font-size 0.3s; /* Áp dụng hiệu ứng chuyển đổi cho kích thước icon */
+}
+
+.floating-btn:hover {
+    padding: 4px; /* Kích thước lớn hơn khi hover */
+}
+
+.floating-btn:hover i {
+    font-size: 20px; /* Kích thước nhỏ hơn của icon khi hover */
+}
+
+.floating-btn .btn-text {
+    opacity: 0; /* Ẩn văn bản ban đầu */
+    transition: opacity 0.3s;
+    margin-left: 10px; /* Đảm bảo văn bản không trùng lên biểu tượng */
+}
+
+.floating-btn:hover .btn-text {
+    opacity: 1; /* Hiển thị văn bản khi hover */
+}
+
+/* Menu nhắn tin */
+.contact-menu {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-menu-item {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-menu-item:last-child {
+    border-bottom: none;
+}
+
+.contact-menu-item a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.contact-menu-item a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contact-menu-item a.facebook {
+    color: #3b5998; /* Màu của Facebook */
+}
+
+.contact-menu-item a.zalo {
+    color: #15be58; /* Màu của Zalo */
+}
+
+.contact-menu-item a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Icon */  
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #555;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #007bff; /* Màu sắc mới khi di chuột qua */
+}
+/* Add your custom styles here */
+.social-icons .social-icon {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    color: #0056b3;
+}
+
+.carousel-item img {
+    object-fit: fill;
+
+    height: 600px;
+}
+/* Custom navigation styles */
+nav ul.nav {
+    background-color: #ffffff; /* Light background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+nav ul.nav .nav-item .nav-link {
+    color: #007bff; /* Primary color for text */
+    padding: 10px 20px; /* Spacing */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+nav ul.nav .nav-item .nav-link:hover {
+    background-color: #007bff; /* Primary color on hover */
+    color: white; /* White text on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+nav ul.nav .nav-item .nav-link.active {
+    background-color: #0056b3; /* Darker primary color for active state */
+    color: white; /* White text for active state */
+    border-radius: 5px; /* Rounded corners for active state */
+}
+/* Base styles for the dropdown menu */
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15);
+}
+
+/* Styles for showing the dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    box-shadow: 0 2px 5px rgba(0,0,0,.15);
+    border-radius: 10px;
+}
+
+/* Additional styles for the dropdown items */
+/* Additional styles for the dropdown items */
+.dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.dropdown-item:hover {
+    background-color: #007bf6;
+    border-radius: 10px;
+    color: #ffffff; /* Change text color to green when hovered */
+}
+/* For small devices (phones) */
+@media (max-width: 576px) {
+    /* CSS styles specific to small devices */
+}
+
+/* For medium devices (tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+    /* CSS styles specific to medium devices */
+}
+
+/* For large devices (desktops) */
+@media (min-width: 992px) {
+    /* CSS styles specific to large devices */
+}
+/* For smaller screens */
+@media (max-width: 768px) {
+    header .container {
+        padding: 10px;
+    }
+
+    header .social-icons {
+        justify-content: center;
+    }
+
+    header .social-icon {
+        margin-right: 5px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .floating-btn {
+        right: 10px;
+    }
+
+    .contact-menu {
+        right: 10px;
+    }
+
+    .carousel-item img {
+        height: auto;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
