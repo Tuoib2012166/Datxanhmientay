@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='https://cdn.haitrieu.com/wp-content/uploads/2022/03/Artboard-3.png' href='favicon.ico' />
-    <title >Đất xanh miền tây</title>
+    <title>Đất xanh miền tây</title>
     <link rel="icon" type="image/png" href="https://cdn.haitrieu.com/wp-content/uploads/2022/03/Artboard-3.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -12,37 +12,43 @@
 </head>
 <body>
     <!-- Header chỉ chứa các icon mạng xã hội -->
-        <header class="bg-white text-primary">
-            <div class="d-flex justify-content-between align-items-center py-3">
-                <a href="#" class="logo">
-                    <img src="https://cdn.datxanhmientay.net/datxanh/2022/03/LOGO-DUNG-DXMT-DUONG-BAN-300x103.png" alt="BẤT ĐỘNG SẢN.VN">
-                </a>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-primary" href="#">Trang chủ</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-primary dropdown-toggle" href="#" id="gioithieuDropdown" role="button">Giới thiệu</a>
-                            <div class="dropdown-menu" aria-labelledby="gioithieuDropdown">
-                                <a class="dropdown-item" href="https://datxanhmientay.net/gioi-thieu-cong-ty">Giới thiệu chung</a>
-                                <a class="dropdown-item" href="https://datxanhmientay.net/">Sơ đồ tổ chức</a>
-                                <a class="dropdown-item" href="https://datxanhmientay.net/gioi-thieu-cong-ty#doingulanhdao">Đội ngũ lãnh đạo</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#">Sản phẩm</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#">Tin tức</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary" href="#">Liên hệ</a></li>
-                    </ul>                   
-                </nav>
-                <button class="btn btn-warning btn-lien-he" onclick="openContactForm()">Liên hệ tư vấn</button>
-            </div>
-        </header>
+    <!-- Trong phần HTML -->
+<header class="bg-white text-primary">
+    <div class="d-flex justify-content-between align-items-center py-3">
+        <a href="#" class="logo">
+            <img src="https://cdn.datxanhmientay.net/datxanh/2022/03/LOGO-DUNG-DXMT-DUONG-BAN-300x103.png" alt="BẤT ĐỘNG SẢN.VN">
+        </a>
+        <!-- Nút Menu -->
+        <button class="btn btn-light d-block d-lg-none" id="toggleNav">
+            <span class="menu-icon">&#9776;</span> <!-- Biểu tượng ba gạch -->
+        </button>
+        <!-- Điều hướng -->
+        <nav class="nav-menu">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-primary" href="#">Trang chủ</a></li>
+                <li class="nav-item dropdown">
+                    <!-- Dropdown -->
+                    <a class="nav-link text-primary dropdown-toggle" href="#" id="gioithieuDropdown" role="button">Giới thiệu</a>
+                    <div class="dropdown-menu" aria-labelledby="gioithieuDropdown">
+                        <a class="dropdown-item" href="https://datxanhmientay.net/gioi-thieu-cong-ty">Giới thiệu chung</a>
+                        <a class="dropdown-item" href="https://datxanhmientay.net/">Sơ đồ tổ chức</a>
+                        <a class="dropdown-item" href="https://datxanhmientay.net/gioi-thieu-cong-ty#doingulanhdao">Đội ngũ lãnh đạo</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link text-primary" href="#">Sản phẩm</a></li>
+                <li class="nav-item"><a class="nav-link text-primary" href="#">Tin tức</a></li>
+                <li class="nav-item"><a class="nav-link text-primary" href="#">Liên hệ</a></li>
+            </ul>                   
+        </nav>
+        <button class="btn btn-warning btn-lien-he" onclick="openContactForm()">Liên hệ tư vấn</button>
+    </div>
+</header>
+
 
     <!-- Phần chính -->
     <main class="container mt-3">
-        
-
         <!-- Carousel -->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000"> <!-- Set data-interval to 2000 milliseconds (3 seconds) -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://duanstellamegacity.vn/wp-content/uploads/2022/12/tong-quan-02.png" class="d-block w-100" alt="...">
@@ -64,29 +70,74 @@
             </a>
         </div>
 
+        <!-- Thẻ bất động sản -->
         <div class="row mt-5" id="property-list">
-            <!-- Các mục bất động sản sẽ được chèn vào đây bởi JavaScript -->
+            <!-- Thẻ bất động sản 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/441711482_1487771845499866_7109495502870926921_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFFPJ6QBNeDUUBOSlLDV1tBDqRCTYc4D_AOpEJNhzgP8ADscm6EEY5-yZcCR_cgLl00WQChiG0Qd_dfLSfEwwjK&_nc_ohc=eAKONHripM4Q7kNvgE56TyL&_nc_ht=scontent.fsgn2-9.fna&oh=00_AYAsqQdjr4BQnOyitZK7LuT9zzfGE12Tp6vgwPfJ4e2wxg&oe=666DCA65" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">💎Căn hộ thông minh cao cấp💎</h5>
+                        <p class="card-text"> ⚜️Chỉ cần 630 triệu (thanh toán 15%) đã sở hữu căn hộ thông minh cao cấp tại trung tâm Cần Thơ ⚜️
+                            <br>✅Đầy đủ tiện ích: Hồ bơi, gym, yoga, khu nướng BBQ, khu vui chơi trẻ em,...
+                            <br>✅Căn 3 PN diện tích 85,85 m2 
+                            <br>✅View triệu đô sông hậu, cầu Cần Thơ, trung tâm quận Ninh Kiều
+                            <br>✅Tặng gói nội thất lên đến 75.000.000 cho khách hàng nhanh tay đặt chỗ
+                            <br>✅Hệ thống SMART HOME hiện đại siêu tiện lợi và tiết kiệm thời gian
+                            <br>☎️ Liên hệ: 0379.874.867 gặp em Thuỵ Đẹp để tham quan nhà mẫu🥰</p>
+                        <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02Tm8xLUsEeYRTE8a5hjUbWXqY6ZuovLxToCMFjjK4Hr3fUoCFrYko3WZmo1oHHPDTl&id=100028011953218" class="btn btn-primary">Xem chi tiết và liên hệ </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Thẻ bất động sản 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bất động sản 2</h5>
+                        <p class="card-text">Mô tả ngắn gọn về bất động sản 2.</p>
+                        <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Thẻ bất động sản 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bất động sản 3</h5>
+                        <p class="card-text">Mô tả ngắn gọn về bất động sản 3.</p>
+                        <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
     <!-- Chân trang -->
     <footer class="bg-dark text-white text-center py-3 mt-5">
-        <img src="https://cdn.datxanhmientay.net/datxanh/elementor/thumbs/LOGO-DUONG-BAN-DUNG-e1642585960165-pw94fw2jinktb5cfhl7bvw3n8ntnxueq1m7ty8vs3k.png" alt="LOGO DUONG BAN DUNG" /></div></div></div></div></div></div><div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b10b9f1" data-id="b10b9f1" data-element_type="column"><div class="elementor-column-wrap"><div class="elementor-widget-wrap"></div></div></div></div></div></section><div class="elementor-element elementor-element-c8e722e elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c8e722e" data-element_type="widget" data-widget_type="icon-list.default"><div class="elementor-widget-container"><ul class="elementor-icon-list-items"><li class="elementor-icon-list-item">
-            <span class="elementor-icon-list-icon">
-            <i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
-            <span class="elementor-icon-list-text">Trụ sở chính: 139 Trần Hưng Đạo, P.An Phú, Q.Ninh Kiều, TP.Cần Thơ</span></li><li class="elementor-icon-list-item">
-            <a href="tel:02923636468"><span class="elementor-icon-list-icon">
-            <i aria-hidden="true" class="fas fa-phone-square-alt"></i></span>
-            <span class="elementor-icon-list-text">Điện thoại: 0379874867</span>
-            </a></li><li class="elementor-icon-list-item">
-            <a href="https://datxanhmientay.net"><span class="elementor-icon-list-icon">
-            
+        <img src="https://cdn.datxanhmientay.net/datxanh/elementor/thumbs/LOGO-DUONG-BAN-DUNG-e1642585960165-pw94fw2jinktb5cfhl7bvw3n8ntnxueq1m7ty8vs3k.png" alt="LOGO DUONG BAN DUNG" />
+        <div class="elementor-icon-list-items">
+            <div class="elementor-icon-list-item">
+                <span class="elementor-icon-list-icon">
+                    <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="elementor-icon-list-text">Trụ sở chính: 139 Trần Hưng Đạo, P.An Phú, Q.Ninh Kiều, TP.Cần Thơ</span>
+            </div>
+            <div class="elementor-icon-list-item">
+                <a href="tel:02923636468">
+                    <span class="elementor-icon-list-icon">
+                        <i aria-hidden="true" class="fas fa-phone-square-alt"></i>
+                    </span>
+                    <span class="elementor-icon-list-text">Điện thoại: 0379874867</span>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <!-- Nút nổi -->
-    <button class="floating-btn" onmouseover="expandButton()" onmouseout="shrinkButton()" onclick="toggleContactMenu()">
-        <i class="fas fa-comment"></i>
-        <span class="btn-text">Nhận báo giá hoặc thông tin liên hệ tại đây</span>
+    <button class="floating-btn" onclick="toggleContactMenu()">
+        <i class="fas fa-comment"></i>  
     </button>
     
     <!-- Menu nhắn tin -->
