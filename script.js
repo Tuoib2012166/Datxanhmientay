@@ -25,6 +25,13 @@ function toggleContactMenu() {
     // Code xử lý khi click vào nút
 }
 
+$(document).ready(function(){
+    $('#carouselExampleControls').carousel({
+        interval: 3000
+    });
+});
+
+
 function expandButton() {
     document.querySelector('.floating-btn').style.width = '300px';
     document.querySelector('.btn-text').style.display = 'inline';

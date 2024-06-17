@@ -194,6 +194,11 @@ footer {
 
     height: 600px;
 }
+/* Hiệu ứng chuyển động mượt hơn cho các hình ảnh trong carousel */
+.carousel-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
 /* Custom navigation styles */
 nav ul.nav {
     background-color: #ffffff; /* Light background */
@@ -313,7 +318,7 @@ nav ul.nav .nav-item .nav-link.active {
 }
 .menu-icon {
     font-size: 1.5rem;
-    color: #007bff; /* Màu xanh dương */
+    color: #007bff; /* Màu xanh dương */ 
     cursor: pointer;
 }
 /* Trong phần CSS */
